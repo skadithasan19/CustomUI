@@ -23,10 +23,16 @@
 		C9429B7A18B79C5900C755BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9429B7818B79C5900C755BC /* InfoPlist.strings */; };
 		C9429B7C18B79C5900C755BC /* CustomUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9429B7B18B79C5900C755BC /* CustomUITests.m */; };
 		C9429B8818B79C9200C755BC /* MainCustomUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9429B8718B79C9200C755BC /* MainCustomUI.m */; };
-		C9429B8B18B79CEC00C755BC /* CommonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429B8918B79CEC00C755BC /* CommonBackground@2x.png */; };
-		C9429B8C18B79CEC00C755BC /* CommonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429B8A18B79CEC00C755BC /* CommonBackground.png */; };
-		C9429B8F18B79DCF00C755BC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429B8D18B79DCF00C755BC /* back.png */; };
-		C9429B9018B79DCF00C755BC /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429B8E18B79DCF00C755BC /* back@2x.png */; };
+		C9429B9318B7A17B00C755BC /* ViewControllerClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = C9429B9218B7A17B00C755BC /* ViewControllerClass1.m */; };
+		C9429B9618B7A18800C755BC /* ViewControllerClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9429B9518B7A18800C755BC /* ViewControllerClass2.m */; };
+		C9429BB918B7A5B000C755BC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429BB118B7A5B000C755BC /* back.png */; };
+		C9429BBA18B7A5B000C755BC /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429BB218B7A5B000C755BC /* back@2x.png */; };
+		C9429BBB18B7A5B000C755BC /* CommonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429BB318B7A5B000C755BC /* CommonBackground.png */; };
+		C9429BBC18B7A5B000C755BC /* CommonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429BB418B7A5B000C755BC /* CommonBackground@2x.png */; };
+		C9429BBD18B7A5B000C755BC /* NewOrrangButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429BB518B7A5B000C755BC /* NewOrrangButton.png */; };
+		C9429BBE18B7A5B000C755BC /* NewOrrangButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429BB618B7A5B000C755BC /* NewOrrangButton@2x.png */; };
+		C9429BBF18B7A5B000C755BC /* yOrrange.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429BB718B7A5B000C755BC /* yOrrange.png */; };
+		C9429BC018B7A5B000C755BC /* yOrrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429BB818B7A5B000C755BC /* yOrrange@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +68,18 @@
 		C9429B7B18B79C5900C755BC /* CustomUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUITests.m; sourceTree = "<group>"; };
 		C9429B8618B79C9200C755BC /* MainCustomUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCustomUI.h; sourceTree = "<group>"; };
 		C9429B8718B79C9200C755BC /* MainCustomUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCustomUI.m; sourceTree = "<group>"; };
-		C9429B8918B79CEC00C755BC /* CommonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CommonBackground@2x.png"; sourceTree = "<group>"; };
-		C9429B8A18B79CEC00C755BC /* CommonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CommonBackground.png; sourceTree = "<group>"; };
-		C9429B8D18B79DCF00C755BC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		C9429B8E18B79DCF00C755BC /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		C9429B9118B7A17B00C755BC /* ViewControllerClass1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerClass1.h; sourceTree = "<group>"; };
+		C9429B9218B7A17B00C755BC /* ViewControllerClass1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerClass1.m; sourceTree = "<group>"; };
+		C9429B9418B7A18800C755BC /* ViewControllerClass2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerClass2.h; sourceTree = "<group>"; };
+		C9429B9518B7A18800C755BC /* ViewControllerClass2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerClass2.m; sourceTree = "<group>"; };
+		C9429BB118B7A5B000C755BC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		C9429BB218B7A5B000C755BC /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		C9429BB318B7A5B000C755BC /* CommonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CommonBackground.png; sourceTree = "<group>"; };
+		C9429BB418B7A5B000C755BC /* CommonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CommonBackground@2x.png"; sourceTree = "<group>"; };
+		C9429BB518B7A5B000C755BC /* NewOrrangButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewOrrangButton.png; sourceTree = "<group>"; };
+		C9429BB618B7A5B000C755BC /* NewOrrangButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewOrrangButton@2x.png"; sourceTree = "<group>"; };
+		C9429BB718B7A5B000C755BC /* yOrrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yOrrange.png; sourceTree = "<group>"; };
+		C9429BB818B7A5B000C755BC /* yOrrange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yOrrange@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +146,10 @@
 				C9429B6218B79C5800C755BC /* Main_iPad.storyboard */,
 				C9429B6518B79C5800C755BC /* ViewController.h */,
 				C9429B6618B79C5800C755BC /* ViewController.m */,
+				C9429B9118B7A17B00C755BC /* ViewControllerClass1.h */,
+				C9429B9218B7A17B00C755BC /* ViewControllerClass1.m */,
+				C9429B9418B7A18800C755BC /* ViewControllerClass2.h */,
+				C9429B9518B7A18800C755BC /* ViewControllerClass2.m */,
 				C9429B6818B79C5800C755BC /* Images.xcassets */,
 				C9429B5418B79C5800C755BC /* Supporting Files */,
 			);
@@ -141,6 +159,7 @@
 		C9429B5418B79C5800C755BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9429BB018B7A5B000C755BC /* images */,
 				C9429B5518B79C5800C755BC /* CustomUI-Info.plist */,
 				C9429B5618B79C5800C755BC /* InfoPlist.strings */,
 				C9429B5918B79C5800C755BC /* main.m */,
@@ -170,14 +189,25 @@
 		C9429B8518B79C6F00C755BC /* BaseUI */ = {
 			isa = PBXGroup;
 			children = (
-				C9429B8D18B79DCF00C755BC /* back.png */,
-				C9429B8E18B79DCF00C755BC /* back@2x.png */,
-				C9429B8918B79CEC00C755BC /* CommonBackground@2x.png */,
-				C9429B8A18B79CEC00C755BC /* CommonBackground.png */,
 				C9429B8618B79C9200C755BC /* MainCustomUI.h */,
 				C9429B8718B79C9200C755BC /* MainCustomUI.m */,
 			);
 			path = BaseUI;
+			sourceTree = "<group>";
+		};
+		C9429BB018B7A5B000C755BC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C9429BB118B7A5B000C755BC /* back.png */,
+				C9429BB218B7A5B000C755BC /* back@2x.png */,
+				C9429BB318B7A5B000C755BC /* CommonBackground.png */,
+				C9429BB418B7A5B000C755BC /* CommonBackground@2x.png */,
+				C9429BB518B7A5B000C755BC /* NewOrrangButton.png */,
+				C9429BB618B7A5B000C755BC /* NewOrrangButton@2x.png */,
+				C9429BB718B7A5B000C755BC /* yOrrange.png */,
+				C9429BB818B7A5B000C755BC /* yOrrange@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,14 +286,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9429B8C18B79CEC00C755BC /* CommonBackground.png in Resources */,
-				C9429B9018B79DCF00C755BC /* back@2x.png in Resources */,
 				C9429B6418B79C5800C755BC /* Main_iPad.storyboard in Resources */,
+				C9429BB918B7A5B000C755BC /* back.png in Resources */,
 				C9429B6918B79C5800C755BC /* Images.xcassets in Resources */,
+				C9429BBF18B7A5B000C755BC /* yOrrange.png in Resources */,
 				C9429B6118B79C5800C755BC /* Main_iPhone.storyboard in Resources */,
-				C9429B8F18B79DCF00C755BC /* back.png in Resources */,
-				C9429B8B18B79CEC00C755BC /* CommonBackground@2x.png in Resources */,
+				C9429BBB18B7A5B000C755BC /* CommonBackground.png in Resources */,
+				C9429BBC18B7A5B000C755BC /* CommonBackground@2x.png in Resources */,
+				C9429BC018B7A5B000C755BC /* yOrrange@2x.png in Resources */,
+				C9429BBE18B7A5B000C755BC /* NewOrrangButton@2x.png in Resources */,
 				C9429B5818B79C5800C755BC /* InfoPlist.strings in Resources */,
+				C9429BBD18B7A5B000C755BC /* NewOrrangButton.png in Resources */,
+				C9429BBA18B7A5B000C755BC /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +318,8 @@
 			files = (
 				C9429B6718B79C5800C755BC /* ViewController.m in Sources */,
 				C9429B5E18B79C5800C755BC /* AppDelegate.m in Sources */,
+				C9429B9618B7A18800C755BC /* ViewControllerClass2.m in Sources */,
+				C9429B9318B7A17B00C755BC /* ViewControllerClass1.m in Sources */,
 				C9429B5A18B79C5800C755BC /* main.m in Sources */,
 				C9429B8818B79C9200C755BC /* MainCustomUI.m in Sources */,
 			);

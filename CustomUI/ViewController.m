@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem=nil;
+       self.navigationItem.leftBarButtonItem=nil;
 }
 
 - (void)didReceiveMemoryWarning

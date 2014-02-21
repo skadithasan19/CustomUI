@@ -14,6 +14,51 @@
 
 @implementation MainCustomUI
 
+- (id) initSingleton
+{
+    if ((self = [super init]))
+    {
+ 
+    }
+    
+    return self;
+}
+
++ (MainCustomUI *) instance
+{
+    // Persistent instance.
+    static MainCustomUI *_default = nil;
+    
+    // Small optimization to avoid wasting time after the
+    // singleton being initialized.
+    if (_default != nil)
+    {
+        return _default;
+    }
+    
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
+    // Allocates once with Grand Central Dispatch (GCD) routine.
+    // It's thread safe.
+    static dispatch_once_t safer;
+    dispatch_once(&safer, ^(void)
+                  {
+                      _default = [[MainCustomUI alloc] initSingleton];
+                  });
+#else
+    // Allocates once using the old approach, it's slower.
+    // It's thread safe.
+    @synchronized([MySingleton class])
+    {
+        // The synchronized instruction will make sure,
+        // that only one thread will access this point at a time.
+        if (_default == nil)
+        {
+            _default = [[MySingleton alloc] initSingleton];
+        }
+    }
+#endif
+    return _default;
+}
 
 
 - (void)viewDidLoad
@@ -21,18 +66,56 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
      self.navigationController.navigationBar.translucent=NO;
+    [[UINavigationBar appearance] setTintColor:[[MainCustomUI instance] colorFromHexString:@"cc6633"]];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"CommonBackground"]]];
     [self addBackButton];
+    [self addRightButton];
+}
+
+
+-(void)viewUIButtonChanges{
+
+    for (UIView *subview in self.view.subviews) {
+        if ([subview isKindOfClass:[UIButton class]]) {
+            UIButton *Button=(UIButton*)subviewbutton;
+            
+            if (Button.tag==0) {
+                
+    [Button setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+             
+            }
+            
+        }
+    }
+}
+- (void)addRightButton {
+    
+    // Custom Navigation Bar Back Button
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 0, 50, 30);
+    [button setTitle:@"Next" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"yOrrange.png"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(rightbuttonAction:) forControlEvents:UIControlEventTouchUpInside];
+   
+    UIBarButtonItem * barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItem = barButtonItem;
+    
+}
+-(void)rightbuttonAction:(id)sender{
+
+    
+
 }
 
 - (void)addBackButton {
     
     // Custom Navigation Bar Back Button
     
-    UIImage *backButtonImage = [UIImage imageNamed:@"back.png"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(-20, 0, 50, 50);
-    [button setImage:backButtonImage forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
     [button addTarget:self.navigationController action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
     UIView * view = [[UIView alloc] initWithFrame:button.bounds];//CGRectMake(0, 0, backButtonImage.size.width,
     [view addSubview:button];

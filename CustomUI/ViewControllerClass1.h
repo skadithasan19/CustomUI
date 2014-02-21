@@ -1,5 +1,5 @@
 //
-//  MainCustomUI.h
+//  ViewControllerClass1.h
 //  CustomUI
 //
 //  Created by Adit Hasan on 2/21/14.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainCustomUI : UIViewController
-- (UIColor *) colorFromHexString:(NSString *)hexString;
-+ (MainCustomUI *) instance;
+@interface ViewControllerClass1 : MainCustomUI
+
 @end
