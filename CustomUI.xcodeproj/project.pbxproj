@@ -22,6 +22,11 @@
 		C9429B7218B79C5900C755BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9429B5118B79C5800C755BC /* UIKit.framework */; };
 		C9429B7A18B79C5900C755BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9429B7818B79C5900C755BC /* InfoPlist.strings */; };
 		C9429B7C18B79C5900C755BC /* CustomUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9429B7B18B79C5900C755BC /* CustomUITests.m */; };
+		C9429B8818B79C9200C755BC /* MainCustomUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9429B8718B79C9200C755BC /* MainCustomUI.m */; };
+		C9429B8B18B79CEC00C755BC /* CommonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429B8918B79CEC00C755BC /* CommonBackground@2x.png */; };
+		C9429B8C18B79CEC00C755BC /* CommonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429B8A18B79CEC00C755BC /* CommonBackground.png */; };
+		C9429B8F18B79DCF00C755BC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429B8D18B79DCF00C755BC /* back.png */; };
+		C9429B9018B79DCF00C755BC /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9429B8E18B79DCF00C755BC /* back@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,12 @@
 		C9429B7718B79C5900C755BC /* CustomUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomUITests-Info.plist"; sourceTree = "<group>"; };
 		C9429B7918B79C5900C755BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9429B7B18B79C5900C755BC /* CustomUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUITests.m; sourceTree = "<group>"; };
+		C9429B8618B79C9200C755BC /* MainCustomUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCustomUI.h; sourceTree = "<group>"; };
+		C9429B8718B79C9200C755BC /* MainCustomUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCustomUI.m; sourceTree = "<group>"; };
+		C9429B8918B79CEC00C755BC /* CommonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CommonBackground@2x.png"; sourceTree = "<group>"; };
+		C9429B8A18B79CEC00C755BC /* CommonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CommonBackground.png; sourceTree = "<group>"; };
+		C9429B8D18B79DCF00C755BC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		C9429B8E18B79DCF00C755BC /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +125,7 @@
 		C9429B5318B79C5800C755BC /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				C9429B8518B79C6F00C755BC /* BaseUI */,
 				C9429B5C18B79C5800C755BC /* AppDelegate.h */,
 				C9429B5D18B79C5800C755BC /* AppDelegate.m */,
 				C9429B5F18B79C5800C755BC /* Main_iPhone.storyboard */,
@@ -153,6 +165,19 @@
 				C9429B7818B79C5900C755BC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9429B8518B79C6F00C755BC /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				C9429B8D18B79DCF00C755BC /* back.png */,
+				C9429B8E18B79DCF00C755BC /* back@2x.png */,
+				C9429B8918B79CEC00C755BC /* CommonBackground@2x.png */,
+				C9429B8A18B79CEC00C755BC /* CommonBackground.png */,
+				C9429B8618B79C9200C755BC /* MainCustomUI.h */,
+				C9429B8718B79C9200C755BC /* MainCustomUI.m */,
+			);
+			path = BaseUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +256,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9429B8C18B79CEC00C755BC /* CommonBackground.png in Resources */,
+				C9429B9018B79DCF00C755BC /* back@2x.png in Resources */,
 				C9429B6418B79C5800C755BC /* Main_iPad.storyboard in Resources */,
 				C9429B6918B79C5800C755BC /* Images.xcassets in Resources */,
 				C9429B6118B79C5800C755BC /* Main_iPhone.storyboard in Resources */,
+				C9429B8F18B79DCF00C755BC /* back.png in Resources */,
+				C9429B8B18B79CEC00C755BC /* CommonBackground@2x.png in Resources */,
 				C9429B5818B79C5800C755BC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +285,7 @@
 				C9429B6718B79C5800C755BC /* ViewController.m in Sources */,
 				C9429B5E18B79C5800C755BC /* AppDelegate.m in Sources */,
 				C9429B5A18B79C5800C755BC /* main.m in Sources */,
+				C9429B8818B79C9200C755BC /* MainCustomUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
