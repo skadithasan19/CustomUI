@@ -110,6 +110,7 @@
     </scenes>
     <resources>
         <image name="NewOrrangButton.png" width="304" height="40"/>
+        <image name="NewOrrangButton.png" width="304" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
