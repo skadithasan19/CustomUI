@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainCustomUI : UIViewController
-- (UIColor *) colorFromHexString:(NSString *)hexString;
-+ (MainCustomUI *) instance;
+@interface MainCustomUI : UIViewController /*If you Inherit MainCustomerUI then the Viewcontroller will change automatically*/
+
 @end

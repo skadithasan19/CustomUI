@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : MainCustomUI
+@interface ViewController : UIViewController
 
 @end

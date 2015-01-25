@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UIViewController+BaseController.h"
 @interface ViewController ()
 
 @end
@@ -18,10 +18,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-       self.navigationItem.leftBarButtonItem=nil;
+   
+    [self ChangeToSKController];
     
-    NSLog(@"This from Adit HAsan");
+    /*Either you can change you UIViewcontroller using this category or you can Inherit MainCustomeUI Controller*/
+    
+     NSLog(@"This first viewcontroller");
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

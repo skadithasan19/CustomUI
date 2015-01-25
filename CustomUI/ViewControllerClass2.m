@@ -36,9 +36,8 @@
 }
 
 - (IBAction)DissmissAction:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
+ 
     
-    }];
 }
 
 @end

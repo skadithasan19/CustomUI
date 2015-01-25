@@ -10,29 +10,29 @@
 	<string>CustomUI</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F4892767-1FB2-47B7-9426-E2A0C1FA063C</key>
+		<key>C8BB801A73C53C718AEF4A1BB8FFBDBFDBE6333A</key>
 		<string>https://github.com/skadithasan19/CustomUI.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CustomUI.xcodeproj/project.xcworkspace</string>
+	<string>CustomUI.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F4892767-1FB2-47B7-9426-E2A0C1FA063C</key>
+		<key>C8BB801A73C53C718AEF4A1BB8FFBDBFDBE6333A</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/skadithasan19/CustomUI.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F4892767-1FB2-47B7-9426-E2A0C1FA063C</string>
+	<string>C8BB801A73C53C718AEF4A1BB8FFBDBFDBE6333A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F4892767-1FB2-47B7-9426-E2A0C1FA063C</string>
+			<string>C8BB801A73C53C718AEF4A1BB8FFBDBFDBE6333A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CustomUI</string>
 		</dict>
