@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="zmc-r1-oRG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zmc-r1-oRG">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -18,19 +18,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kb6-SW-2Q0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-845" y="236"/>
+            <point key="canvasLocation" x="-1533.75" y="76.056338028169009"/>
         </scene>
         <!--View Controller Class2-->
         <scene sceneID="pJA-hY-nf7">
             <objects>
                 <viewController storyboardIdentifier="ViewControllerClass2" id="xUV-o8-xRL" customClass="ViewControllerClass2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="msp-at-DWM"/>
+                        <viewControllerLayoutGuide type="bottom" id="n9r-sE-h7U"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XcH-GI-q0n">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" id="yEK-nY-jlc">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yEK-nY-jlc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="WLm-GN-XQ8"/>
                                 </items>
@@ -42,53 +45,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXi-Lw-O4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-344" y="725"/>
+            <point key="canvasLocation" x="-652.5" y="907.39436619718299"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rdQ-dn-CU6"/>
+                        <viewControllerLayoutGuide type="bottom" id="5aK-8d-Jex"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iqn-7j-2RT">
-                                <rect key="frame" x="4" y="493" width="150" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqn-7j-2RT">
+                                <rect key="frame" x="7" y="493" width="290" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iBa-yD-qeK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Modal" backgroundImage="NewOrrangButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xUV-o8-xRL" kind="push" id="oZB-oJ-Fzh"/>
+                                    <segue destination="xUV-o8-xRL" kind="show" id="oZB-oJ-Fzh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R66-yY-T54">
-                                <rect key="frame" x="166" y="493" width="150" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R66-yY-T54">
+                                <rect key="frame" x="302" y="493" width="290" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2O6-zy-tgg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Push" backgroundImage="NewOrrangButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Eqs-XX-QPI" kind="push" id="pWN-5v-CAl"/>
+                                    <segue destination="Eqs-XX-QPI" kind="show" id="pWN-5v-CAl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R66-yY-T54" firstAttribute="width" secondItem="iqn-7j-2RT" secondAttribute="width" id="DL2-DR-mC3"/>
+                            <constraint firstAttribute="trailing" secondItem="R66-yY-T54" secondAttribute="trailing" constant="8" id="DwW-0r-gkV"/>
+                            <constraint firstItem="iqn-7j-2RT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="7" id="HLY-yi-Jo4"/>
+                            <constraint firstItem="5aK-8d-Jex" firstAttribute="top" secondItem="iqn-7j-2RT" secondAttribute="bottom" constant="67" id="JiG-QP-Iw3"/>
+                            <constraint firstItem="R66-yY-T54" firstAttribute="leading" secondItem="iqn-7j-2RT" secondAttribute="trailing" constant="5" id="QNc-us-iMy"/>
+                            <constraint firstItem="5aK-8d-Jex" firstAttribute="top" secondItem="R66-yY-T54" secondAttribute="bottom" constant="67" id="iP1-lx-Lay"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="coJ-AR-idX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-348" y="72"/>
+            <point key="canvasLocation" x="-652.5" y="76.056338028169009"/>
         </scene>
         <!--View Controller Class1-->
         <scene sceneID="9O4-Fq-8kH">
             <objects>
                 <viewController storyboardIdentifier="ViewControllerClass1" id="Eqs-XX-QPI" customClass="ViewControllerClass1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fXK-5h-Bk6"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRX-cf-uD7"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aCX-tq-QdP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -96,15 +119,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vz-46-mdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="72"/>
+            <point key="canvasLocation" x="151.875" y="76.056338028169009"/>
         </scene>
     </scenes>
     <resources>
         <image name="NewOrrangButton.png" width="304" height="40"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

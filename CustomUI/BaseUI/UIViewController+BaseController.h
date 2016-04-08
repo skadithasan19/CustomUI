@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (BaseController)
+
 -(void)ChangeToSKController;
+
 @end

@@ -11,4 +11,5 @@
 @interface UIBarButtonItem (UIBarButtonCategory)
 
 -(UIBarButtonItem *)addSKBarButton:(NSString *)buttonTitle actionhandler:(void(^)())actionhandlered;
+
 @end

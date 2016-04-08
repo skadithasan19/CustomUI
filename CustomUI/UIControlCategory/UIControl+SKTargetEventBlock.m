@@ -57,7 +57,7 @@ static char *eventWrapListKey;
 -(void)removeEventHandlerFromExistingEvent:(UIControlEvents)controlEvent{
 
     __block __weak UIControl *wkSelf = self;
-[[self eventWrapList] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    [[self eventWrapList] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     
     SKEventWrapper *wrapObj = obj;
     if (wrapObj.controlEvent == controlEvent) {

@@ -14,4 +14,5 @@ typedef void(^SKEventHandler)(id sender,UIEvent *event);
 
 -(void)addControlEventHandler:(SKEventHandler)skhandler forControlEvent:(UIControlEvents)controlEvent;
 -(void)removeEventHandlerFromExistingEvent:(UIControlEvents)controlEvent;
+
 @end

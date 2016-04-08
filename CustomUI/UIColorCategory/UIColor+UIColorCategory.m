@@ -9,6 +9,7 @@
 #import "UIColor+UIColorCategory.h"
 
 @implementation UIColor (UIColorCategory)
+
 - (UIColor *) colorFromHexString:(NSString *)hexString {
     NSString *cleanString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
     if([cleanString length] == 3) {
@@ -31,4 +32,5 @@
     
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
+
 @end
